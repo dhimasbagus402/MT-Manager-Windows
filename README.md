@@ -1,120 +1,120 @@
-[README.md](https://github.com/user-attachments/files/30887901/README.md)
+[README.md](https://github.com/user-attachments/files/30888070/README.md)
 <div align="center">
 
 # MT Manager
 
-**Satu aplikasi untuk mengatur semua terminal MetaTrader Anda.**
+**One app to manage every MetaTrader terminal you run.**
 
-Scan otomatis semua MT4 & MT5 yang terpasang, kelola EA dan Indicator,
-bersihkan file sampah, duplikat terminal, sampai unduh EA langsung dari link —
-semuanya dari satu jendela.
+Automatically finds every MT4 and MT5 installed on your PC, manages your EAs and
+indicators, clears out junk files, duplicates terminals, and downloads EAs
+straight from a link — all from a single window.
 
 [![Windows](https://img.shields.io/badge/Windows-7%20SP1%20%7C%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white)](#-system-requirements)
-[![Version](https://img.shields.io/badge/versi-1-EC3013?style=flat-square)](#)
-[![Gratis](https://img.shields.io/badge/harga-gratis-5ecf3e?style=flat-square)](#)
+[![Version](https://img.shields.io/badge/version-1-EC3013?style=flat-square)](#)
+[![Free](https://img.shields.io/badge/price-free-5ecf3e?style=flat-square)](#)
 
-<img src="Image/main-dark.png" alt="Tampilan utama MT Manager" width="900">
+<img src="Image/main-dark.png" alt="MT Manager main window" width="900">
 
 </div>
 
 ---
 
-## Kenapa MT Manager?
+## Why MT Manager?
 
-Kalau Anda menjalankan lebih dari satu akun MetaTrader, pekerjaan kecil jadi
-melelahkan. Mau pasang satu EA ke lima terminal? Buka folder data satu per satu.
-Mau tahu kenapa disk penuh? Telusuri folder `Logs`, `Bases`, `Tester` sendiri.
-Mau menambah terminal kedua dari broker yang sama? Install ulang dari awal.
+If you run more than one MetaTrader account, the small jobs become the tiring
+ones. Want to install a single EA across five terminals? Open each data folder
+one by one. Wondering why your disk is full? Go dig through `Logs`, `Bases` and
+`Tester` yourself. Need a second terminal from the same broker? Reinstall it
+from scratch.
 
-MT Manager mengumpulkan semua itu ke satu tempat. Terminal Anda terdeteksi
-otomatis, isinya ditampilkan rapi per kategori, dan setiap tindakan tinggal
-satu klik.
+MT Manager brings all of it into one place. Your terminals are detected for you,
+their contents are laid out by category, and every action is a single click away.
 
 ---
 
-## ✨ Fitur
+## ✨ Features
 
-### Semua terminal terdeteksi otomatis
+### Every terminal, found automatically
 
-Tekan **Scan MetaTrader** dan semua MT4/MT5 yang terpasang langsung muncul di
-sidebar, dikelompokkan per jenis. Pilih salah satu untuk melihat detailnya:
-nama, tipe, lokasi folder data, dan status autostart.
+Hit **Scan MetaTrader** and every installed MT4/MT5 shows up in the sidebar,
+grouped by type. Select one to see its details: name, platform, data folder
+location, and whether it starts with Windows.
 
-Isi terminal ditampilkan sebagai satu daftar rapi dengan label warna per
-kategori — **Expert Advisor**, **Indicator**, **Script**, **Log**, **History**,
-**Ticks**, dan **Cache** — lengkap dengan ukuran dan tanggal ubah.
+Its contents appear as one clean list with a colour-coded label per category —
+**Expert Advisor**, **Indicator**, **Script**, **Log**, **History**, **Ticks**
+and **Cache** — along with each file's size and last-modified date.
 
-<img src="Image/main-dark.png" alt="Daftar terminal dan file" width="820">
+<img src="Image/main-dark.png" alt="Terminal list and file table" width="820">
 
-### Kelola EA & Indicator
+### Manage EAs and indicators
 
-Pasang EA atau Indicator ke terminal yang sedang dipilih tanpa perlu tahu di
-folder mana file-nya harus ditaruh. Butuh menghapus? Centang beberapa file
-sekaligus lalu hapus dalam satu langkah. Tersedia juga **Copy / Cut / Paste**
-antar terminal — praktis untuk menyalin EA yang sama ke beberapa akun.
+Install an EA or indicator into the selected terminal without ever needing to
+know which folder it belongs in. Need to remove some? Tick several files and
+delete them in one go. **Copy / Cut / Paste** works across terminals too, which
+makes putting the same EA on several accounts quick.
 
-<img src="Image/menu-manage-ea.png" alt="Menu Manage EA / Indicator" width="820">
+<img src="Image/menu-manage-ea.png" alt="Manage EA / Indicator menu" width="820">
 
-### Bersihkan file sampah
+### Clear out the junk
 
-MetaTrader menumpuk log, data history, tick, dan cache tester yang bisa memakan
-puluhan gigabyte. Menu **Utility** membersihkannya per jenis, jadi Anda bisa
-memilih mana yang dibuang tanpa menyentuh EA atau setting. MetaEditor juga bisa
-dibuka langsung dari sini.
+MetaTrader quietly piles up logs, price history, tick data and tester caches
+that can swallow tens of gigabytes. The **Utility** menu clears them by type, so
+you choose exactly what goes without touching your EAs or settings. MetaEditor
+opens straight from here as well.
 
-<img src="Image/menu-utility.png" alt="Menu Utility" width="820">
+<img src="Image/menu-utility.png" alt="Utility menu" width="820">
 
-### Install, duplikat, dan uninstall MetaTrader
+### Install, duplicate and uninstall MetaTrader
 
-<img src="Image/menu-add-remove-mt.png" alt="Menu Add / Remove MT" width="820">
+<img src="Image/menu-add-remove-mt.png" alt="Add / Remove MT menu" width="820">
 
-**Install MetaTrader** menyediakan daftar broker siap pasang yang bisa dicari
-dan difilter per MT4/MT5 — tinggal pilih, sisanya berjalan sendiri. Punya file
-installer sendiri? Bisa juga dipakai lewat pilihan installer lokal.
+**Install MetaTrader** gives you a searchable, ready-to-install broker list you
+can filter by MT4 or MT5 — pick one and the rest happens on its own. Already have
+an installer file of your own? Point it at that instead.
 
-<img src="Image/install-mt.png" alt="Jendela Install MetaTrader" width="620">
+<img src="Image/install-mt.png" alt="Install MetaTrader window" width="620">
 
-**Duplicate MetaTrader** membuat terminal kedua dari broker yang sama, lengkap
-dengan progress copy dan langsung dijalankan setelah selesai. Berguna kalau
-Anda punya beberapa akun di broker yang sama dan ingin tiap akun punya
-terminalnya sendiri.
+**Duplicate MetaTrader** creates a second terminal from the same broker, with a
+copy progress bar, and launches it once it's done. Handy when you hold several
+accounts at one broker and want each to have its own terminal.
 
-<img src="Image/duplicate-mt.png" alt="Jendela Duplicate MetaTrader" width="620">
+<img src="Image/duplicate-mt.png" alt="Duplicate MetaTrader window" width="620">
 
-### Unduh EA langsung dari link
+### Download EAs straight from a link
 
-Tempel URL (atau perintah `wget` lengkap) ke kotak **Wget Downloader**, dan
-file akan diunduh dengan progress bar. File `.zip` otomatis diekstrak begitu
-selesai, jadi EA langsung siap dipakai tanpa mampir ke File Explorer.
+Paste a URL (or a full `wget` command) into the **Wget Downloader** box and the
+file downloads with a progress bar. `.zip` files are extracted automatically the
+moment they finish, so an EA is ready to use without a detour through File
+Explorer.
 
-### Jalan otomatis saat komputer menyala
+### Start automatically with your PC
 
-Setiap terminal punya sakelar **autostart** sendiri. Nyalakan, dan terminal itu
-ikut jalan setiap Windows booting — cocok untuk VPS yang harus selalu online.
-Saat MT Manager di-uninstall, semua entri autostart yang pernah dibuat ikut
-dibersihkan otomatis.
+Every terminal gets its own **autostart** switch. Turn it on and that terminal
+launches whenever Windows boots — ideal for a VPS that has to stay online. If
+you ever uninstall MT Manager, every autostart entry it created is removed for
+you.
 
-### Tema gelap & terang
+### Dark and light themes
 
-Satu klik untuk berganti tema, dan seluruh aplikasi ikut berubah seketika —
-termasuk title bar-nya.
+One click switches the theme, and the whole app follows instantly — title bar
+included.
 
-<img src="Image/main-light.png" alt="Tema terang" width="820">
+<img src="Image/main-light.png" alt="Light theme" width="820">
 
-### Notifikasi yang tidak mengganggu
+### Notifications that stay out of the way
 
-Pemberitahuan muncul sebentar lalu hilang sendiri. Tidak ada lagi kotak dialog
-yang harus ditutup manual setiap kali menyelesaikan sesuatu.
+Messages appear briefly and fade on their own. No more dialog boxes to dismiss
+every time something finishes.
 
-<img src="Image/toast.png" alt="Notifikasi ringan" width="820">
+<img src="Image/toast.png" alt="Self-dismissing notification" width="820">
 
-### Selalu versi terbaru
+### Always up to date
 
-MT Manager memeriksa pembaruan sendiri, mengunduh, memasang, dan menjalankan
-ulang dirinya — Anda cukup menekan satu tombol. Setiap versi baru datang dengan
-catatan perubahan yang bisa dibaca kapan saja lewat **What's New**.
+MT Manager checks for updates, downloads, installs and restarts itself — you
+just press one button. Every release comes with notes you can read any time from
+**What's New**.
 
-<img src="Image/whats-new.png" alt="What's New" width="620">
+<img src="Image/whats-new.png" alt="What's New window" width="620">
 
 ---
 
@@ -122,32 +122,32 @@ catatan perubahan yang bisa dibaca kapan saja lewat **What's New**.
 
 | | Minimum |
 |---|---|
-| **Sistem operasi** | Windows 7 SP1 atau lebih baru — Windows 8, 8.1, 10, dan 11 didukung penuh (32-bit maupun 64-bit) |
-| **.NET Framework** | Versi 4.8. Sudah bawaan di Windows 10 (update Mei 2019) ke atas; installer akan memberi tahu dan mengarahkan ke halaman unduhan resmi Microsoft bila belum ada |
-| **MetaTrader** | MT4 dan/atau MT5 yang terpasang secara normal. Instalasi **portable** tidak terdeteksi |
-| **Ruang disk** | Sekitar 10 MB untuk aplikasi |
-| **RAM** | Tidak ada kebutuhan khusus — aplikasi ini ringan |
-| **Hak Administrator** | **Tidak wajib.** MT Manager terpasang per-pengguna. Administrator hanya diperlukan bila Anda menduplikasi terminal yang berada di dalam `Program Files` |
-| **Koneksi internet** | Diperlukan hanya untuk daftar broker, pengecekan pembaruan, dan Wget Downloader. Semua fitur lain berjalan offline |
+| **Operating system** | Windows 7 SP1 or newer — Windows 8, 8.1, 10 and 11 fully supported (32-bit and 64-bit) |
+| **.NET Framework** | Version 4.8. Already included in Windows 10 (May 2019 update) and later; the installer will tell you and point you to Microsoft's official download if it's missing |
+| **MetaTrader** | MT4 and/or MT5 installed normally. **Portable** installations are not detected |
+| **Disk space** | About 10 MB for the app |
+| **RAM** | Nothing special — this is a lightweight app |
+| **Administrator rights** | **Not required.** MT Manager installs per user. Administrator is only needed if you duplicate a terminal that lives inside `Program Files` |
+| **Internet connection** | Only needed for the broker list, update checks and the Wget Downloader. Everything else works offline |
 
 ---
 
-## 📥 Instalasi
+## 📥 Installation
 
-1. Unduh `MTManager-Setup-1.exe` dari halaman [Releases](../../releases).
-2. Jalankan installer-nya, ikuti langkahnya sampai selesai.
-3. Buka MT Manager, tekan **Scan MetaTrader**, dan terminal Anda langsung muncul.
+1. Download `MTManager-Setup-1.exe` from the [Releases](../../releases) page.
+2. Run the installer and follow it through.
+3. Open MT Manager, press **Scan MetaTrader**, and your terminals appear.
 
-Tidak perlu konfigurasi apa pun setelah instalasi.
+There's nothing to configure afterwards.
 
 ---
 
-## ❤️ Dukung Proyek Ini
+## ❤️ Support This Project
 
-MT Manager gratis dan bisa dipakai siapa saja. Kalau aplikasi ini membantu
-pekerjaan Anda, dukungan sekecil apa pun sangat berarti untuk pengembangannya.
+MT Manager is free for anyone to use. If it saves you time, any support at all
+goes a long way toward keeping it developed.
 
-<img src="Image/donate.png" alt="Dialog donasi" width="480">
+<img src="Image/donate.png" alt="Donate dialog" width="480">
 
 <div align="center">
 
@@ -159,28 +159,28 @@ pekerjaan Anda, dukungan sekecil apa pun sangat berarti untuk pengembangannya.
 
 ---
 
-## ❓ Pertanyaan Umum
+## ❓ FAQ
 
-**Apakah MT Manager mengubah setting atau akun trading saya?**
-Tidak. MT Manager hanya mengelola file dan folder milik terminal — memasang,
-menyalin, dan menghapus EA/Indicator, serta membersihkan log dan cache.
-Akun, chart, dan setting trading Anda tidak disentuh.
+**Does MT Manager change my trading settings or accounts?**
+No. It only manages files and folders that belong to your terminals — installing,
+copying and deleting EAs and indicators, and clearing logs and caches. Your
+accounts, charts and trading settings are never touched.
 
-**Kenapa terminal saya tidak muncul saat di-scan?**
-MT Manager membaca terminal yang terpasang secara normal. MetaTrader yang
-dijalankan dalam mode **portable** menyimpan datanya di folder aplikasi sendiri
-sehingga tidak terdeteksi.
+**Why doesn't my terminal show up when I scan?**
+MT Manager reads terminals that were installed normally. MetaTrader running in
+**portable** mode keeps its data inside its own program folder, so it isn't
+detected.
 
-**Apakah data MetaTrader saya ikut terhapus kalau MT Manager di-uninstall?**
-Tidak. Yang dibersihkan hanya milik MT Manager sendiri — pengaturan aplikasi
-dan entri autostart yang pernah dibuatnya. Folder data MetaTrader tetap utuh.
+**Will my MetaTrader data be deleted if I uninstall MT Manager?**
+No. Only MT Manager's own things are removed — its settings and any autostart
+entries it created. Your MetaTrader data folders are left untouched.
 
-**Apakah aplikasi ini berbayar?**
-Tidak, gratis sepenuhnya.
+**Is this paid software?**
+No, it's completely free.
 
 ---
 
 <div align="center">
-<sub>Developer? Catatan teknis, cara build, dan mekanisme update ada di
+<sub>Developer? Technical notes, build steps and the update mechanism live in
 <a href="docs/DEVELOPMENT.md">docs/DEVELOPMENT.md</a>.</sub>
 </div>
