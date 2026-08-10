@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "url": "https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-1.exe",
-  "sha256": "4f834fe36c411e4a419e32e4dfd9897fc03c0d38ecbbee8c0bc0f08e5e842ac5",
-  "notes": "Initial Release."
+  "version": "1.2",
+  "url": "https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-1.2.exe",
+  "sha256": "d9485439a5145cb5a9276b0715806b627ca7eb906fbf1ba3b97b9cb74804fc5d",
+  "notes": "Fix bug disk usage bar."
 }
