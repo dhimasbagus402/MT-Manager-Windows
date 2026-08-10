@@ -134,7 +134,7 @@ just press one button. Every release comes with notes you can read any time from
 
 ## 📥 Installation
 
-1. Download `MTManager-Setup-1.exe` from the [Releases](../../release) page.
+1. Download `MTManager-Setup-1.exe` from the [Releases](../../Release) page.
 2. Run the installer and follow it through.
 3. Open MT Manager, press **Scan MetaTrader**, and your terminals appear.
 
