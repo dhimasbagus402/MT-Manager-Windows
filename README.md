@@ -179,8 +179,3 @@ entries it created. Your MetaTrader data folders are left untouched.
 No, it's completely free.
 
 ---
-
-<div align="center">
-<sub>Developer? Technical notes, build steps and the update mechanism live in
-<a href="docs/DEVELOPMENT.md">docs/DEVELOPMENT.md</a>.</sub>
-</div>
