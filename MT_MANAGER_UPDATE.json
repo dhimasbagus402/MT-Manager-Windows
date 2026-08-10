@@ -1,6 +1,6 @@
 {
-  "version": "3.0",
-  "url": "https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-3.exe",
-  "sha256": "2ec947d594b4cf16e213cfa355964782732597844e338877e9214f142d4c6b44",
+  "version": "1.0",
+  "url": "https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-1.exe",
+  "sha256": "4f834fe36c411e4a419e32e4dfd9897fc03c0d38ecbbee8c0bc0f08e5e842ac5",
   "notes": "Initial Release."
 }
