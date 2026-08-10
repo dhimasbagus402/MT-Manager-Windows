@@ -1,0 +1,55 @@
+# MT Broker Download List
+# Untuk MT Manager
+# Format tiap baris: VERSI|Nama Broker|URL
+# VERSI harus MT4 atau MT5
+# Baris kosong dan diawali '#' diabaikan
+# Supaya tetap rapi, urutkan berdasarkan Nama
+
+# ── MT4 ──
+MT4|Axi|https://download.mql5.com/cdn/web/axicorp.financial.services/mt4/axi4setup.exe
+MT4|Elev8|https://download.terminal.free/cdn/web/elev8.markets.ltd/mt4/elev84setup.exe
+MT4|Exness|https://download.metatrader.com/cdn/web/exness.technologies.ltd/mt4/exness4setup.exe
+MT4|FBS|https://download.mql5.com/cdn/web/fbs.markets.inc/mt4/fbs4setup.exe
+MT4|FTMO|https://download.terminal.free/cdn/web/ftmo.global.markets/mt4/ftmo4setup.exe
+MT4|FX Clearing|https://download.mql5.com/cdn/web/fxcl.markets.ltd/mt4/fxcl4setup.exe
+MT4|FXTM|https://download.mql5.com/cdn/web/16626/mt4/forextimefxtm4setup.exe
+MT4|Headway|https://download.mql5.com/cdn/web/jarocel.pty.ltd/mt4/headway4setup.exe
+MT4|HFM|https://download.mql5.com/cdn/web/7399/mt4/hfmarketssv4setup.exe
+MT4|IC Markets|https://download.mql5.com/cdn/web/18036/mt4/icmarketssc4setup.exe
+MT4|JustMarkets|https://download.mql5.com/cdn/web/just.global.markets/mt4/justmarkets4setup.exe
+MT4|Markets4you|https://download.terminal.free/cdn/web/20142/mt4/eglobaltrade4setup.exe
+MT4|OctaFX|https://download.mql5.com/cdn/web/octa.markets.incorporated/mt4/octafx4setup.exe
+MT4|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt4/pepperstone4setup.exe
+MT4|Tickmill|https://download.mql5.com/cdn/web/17409/mt4/tickmill4setup.exe
+MT4|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt4/ultimamarkets4setup.exe
+MT4|Valetax|https://download.terminal.free/cdn/web/valetax.international.limited/mt4/valetaxintl4setup.exe
+MT4|VT Markets|https://download.terminal.free/cdn/web/vt.markets.pty/mt4/vtmarkets4setup.exe
+MT4|Weltrade|https://download.mql5.com/cdn/web/systemgates.limited/mt4/weltrade4setup.exe
+MT4|XM Global|https://download.mql5.com/cdn/web/xm.global.limited/mt4/xmglobal4setup.exe
+
+# ── MT5 ──
+MT5|Axi|https://download.mql5.com/cdn/web/axicorp.financial.services/mt5/axi5setup.exe
+MT5|CXM Direct|https://download.mql5.com/cdn/web/22250/mt5/cxmdirect5setup.exe
+MT5|Deriv|https://download.mql5.com/cdn/web/deriv.com.limited/mt5/deriv5setup.exe
+MT5|Dupoin|https://download.mql5.com/cdn/web/23187/mt5/dupoinfuturesid5setup.exe
+MT5|Elev8|https://download.terminal.free/cdn/web/elev8.markets.ltd/mt5/elev85setup.exe
+MT5|Exness|https://download.metatrader.com/cdn/web/exness.technologies.ltd/mt5/exness5setup.exe
+MT5|FBS|https://download.mql5.com/cdn/web/fbs.markets.inc/mt5/fbs5setup.exe
+MT5|FTMO|https://download.terminal.free/cdn/web/ftmo.global.markets/mt5/ftmo5setup.exe
+MT5|FXTM|https://download.mql5.com/cdn/web/16628/mt5/forextimefxtm5setup.exe
+MT5|Headway|https://download.mql5.com/cdn/web/jarocel.pty.ltd/mt5/headway5setup.exe
+MT5|HFM|https://download.mql5.com/cdn/web/12018/mt5/hfmarketsglobal5setup.exe
+MT5|IC Markets|https://download.mql5.com/cdn/web/18040/mt5/icmarketssc5setup.exe
+MT5|JustMarkets|https://download.mql5.com/cdn/web/just.global.markets/mt5/justmarkets5setup.exe
+MT5|Markets4you|https://download.terminal.free/cdn/web/eglobal.trade.and/mt5/eglobaltrade5setup.exe
+MT5|MT5 Umum|https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe
+MT5|OctaFX|https://download.terminal.free/cdn/web/octa.markets.incorporated/mt5/octafx5setup.exe
+MT5|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt5/pepperstone5setup.exe
+MT5|ThinkMarkets|https://download.terminal.free/cdn/web/tf.global.markets/mt5/thinkmarkets5setup.exe
+MT5|Tickmill|https://download.mql5.com/cdn/web/19497/mt5/tickmill5setup.exe
+MT5|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt5/ultimamarkets5setup.exe
+MT5|Valetax Global|https://download.terminal.free/cdn/web/valetax.global.limited/mt5/valetaxglobal5setup.exe
+MT5|Valetax International|https://download.terminal.free/cdn/web/valetax.international.limited/mt5/valetaxintl5setup.exe
+MT5|VT Markets|https://download.terminal.free/cdn/web/vt.markets.pty/mt5/vtmarkets5setup.exe
+MT5|Weltrade|https://download.mql5.com/cdn/web/systemgates.limited/mt5/weltrade5setup.exe
+MT5|XM Global|https://download.mql5.com/cdn/web/xm.global.limited/mt5/xmglobal5setup.exe
