@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dhimasbagus402.github.io/MT-Manager-Windows/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png</image:loc>
+      <image:title>MT Manager main window</image:title>
+      <image:caption>MT Manager listing every detected MetaTrader 4 and MetaTrader 5 terminal and its files</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-light.png</image:loc>
+      <image:title>MT Manager light theme</image:title>
+      <image:caption>MT Manager in its light theme</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/install-mt.png</image:loc>
+      <image:title>Install MetaTrader</image:title>
+      <image:caption>The searchable broker list for installing a new MetaTrader terminal</image:caption>
+    </image:image>
+  </url>
+</urlset>
