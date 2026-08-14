@@ -2,7 +2,6 @@
 <html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
-<meta name="google-site-verification" content="JsqSkb3w8N0nKgKIvepCt8YtPjdAEphyXHxm7ysrcIo" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ── SEO ────────────────────────────────────────────────────────────────
@@ -23,7 +22,15 @@
 <meta name="theme-color" content="#f3f2f2" media="(prefers-color-scheme: light)">
 <meta name="apple-mobile-web-app-title" content="MT Manager">
 
-<link rel="icon" href="MTManager/app.ico" sizes="any">
+<!-- Favicon. Sebelumnya menunjuk ke MTManager/app.ico, tapi folder kode sumber
+     itu tidak ikut diterbitkan ke GitHub Pages (404), jadi tab browser jatuh ke
+     ikon globe bawaan. Berkas di bawah ini ada di lokasi yang benar-benar
+     terbit. favicon.ico tetap disediakan karena sebagian browser memintanya
+     langsung ke /favicon.ico tanpa membaca tag <link>. -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="Image/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Image/favicon-16.png">
+<link rel="apple-touch-icon" href="Image/apple-touch-icon.png">
 
 <!-- Open Graph / Twitter. og:image MUST be absolute — most platforms refuse
      to fetch a relative path when they render the link preview. -->
