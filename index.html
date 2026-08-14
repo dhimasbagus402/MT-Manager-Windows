@@ -3,19 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MT Manager — One app for every MetaTrader terminal</title>
-<meta name="description" content="MT Manager finds every MetaTrader 4 and 5 terminal on your PC and lets you manage EAs, clear junk files, duplicate terminals and download EAs from a link — all from one window. Free for Windows.">
 
-<link rel="icon" href="MTManager/app.ico">
+<!-- ── SEO ────────────────────────────────────────────────────────────────
+     Target terms: "MT Manager" and "MetaTrader Manager". Both appear in the
+     title, the description, the H1 and the body copy, plus the structured
+     data below, so search engines see one consistent name for the product.
+
+     GANTI URL DI BAWAH kalau situsnya tidak dipasang di GitHub Pages default.
+     Canonical dan og:url harus URL absolut yang benar-benar bisa dibuka —
+     kalau salah, halaman ini bisa dianggap duplikat dari alamat lain.
+     ─────────────────────────────────────────────────────────────────────── -->
+<title>MT Manager — Free MetaTrader Manager for MT4 &amp; MT5</title>
+<meta name="description" content="Free MetaTrader manager for Windows. MT Manager finds every MT4 and MT5 terminal on your PC to manage Expert Advisors, clear logs and duplicate terminals.">
+<link rel="canonical" href="https://dhimasbagus402.github.io/MT-Manager-Windows/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="MT Manager">
+<meta name="theme-color" content="#171514" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3f2f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="MT Manager">
+
+<link rel="icon" href="MTManager/app.ico" sizes="any">
+
+<!-- Open Graph / Twitter. og:image MUST be absolute — most platforms refuse
+     to fetch a relative path when they render the link preview. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="MT Manager — One app for every MetaTrader terminal">
-<meta property="og:description" content="Manage EAs, clear junk files, duplicate terminals and download EAs from a link — all from one window. Free for Windows.">
-<meta property="og:image" content="Image/main-dark.png">
+<meta property="og:site_name" content="MT Manager">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://dhimasbagus402.github.io/MT-Manager-Windows/">
+<meta property="og:title" content="MT Manager — Free MetaTrader Manager for MT4 &amp; MT5">
+<meta property="og:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals — free for Windows.">
+<meta property="og:image" content="https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png">
+<meta property="og:image:width" content="1782">
+<meta property="og:image:height" content="1131">
+<meta property="og:image:alt" content="The MT Manager window listing detected MetaTrader terminals and their files">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MT Manager — Free MetaTrader Manager for MT4 &amp; MT5">
+<meta name="twitter:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals — free for Windows.">
+<meta name="twitter:image" content="https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Structured data: tells Google this page is a downloadable Windows app,
+     which is what makes the price / rating / OS chips eligible in results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MT Manager",
+  "alternateName": ["MetaTrader Manager", "MT Manager for Windows"],
+  "description": "A free MetaTrader manager for Windows that detects every MetaTrader 4 and MetaTrader 5 terminal on the PC and manages Expert Advisors, indicators, logs, tick data and terminal installations from a single window.",
+  "url": "https://dhimasbagus402.github.io/MT-Manager-Windows/",
+  "image": "https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "Trading platform utility",
+  "operatingSystem": "Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows 11",
+  "softwareRequirements": ".NET Framework 4.8",
+  "downloadUrl": "https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release",
+  "installUrl": "https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release",
+  "softwareHelp": "https://github.com/dhimasbagus402/MT-Manager-Windows",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "featureList": [
+    "Automatically detects installed MetaTrader 4 and MetaTrader 5 terminals",
+    "Install and remove Expert Advisors and indicators",
+    "Copy, cut and paste files between terminals",
+    "Clear logs, price history, tick data and tester cache",
+    "Install, duplicate and uninstall MetaTrader terminals",
+    "Download Expert Advisors from a URL with automatic ZIP extraction",
+    "Per-terminal autostart with Windows",
+    "Dark and light themes"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does MT Manager change my trading settings or accounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It only manages files and folders that belong to your MetaTrader terminals — installing, copying and deleting Expert Advisors and indicators, and clearing logs and caches. Your accounts, charts and trading settings are never touched."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't my MetaTrader terminal show up when I scan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MT Manager reads terminals that were installed normally. MetaTrader running in portable mode keeps its data inside its own program folder, so it isn't detected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my MetaTrader data be deleted if I uninstall MT Manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Only MT Manager's own things are removed — its settings and any autostart entries it created. Your MetaTrader data folders are left untouched."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is MT Manager paid software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, it is completely free to download and use."
+      }
+    }
+  ]
+}
+</script>
 
 <style>
 /* ══════════════════════════════════════════════════════════════════════════
@@ -117,7 +223,9 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:800;line-height:1.12;letter-spac
   opacity:.5;
 }
 .hero-in{position:relative;text-align:center}
-.hero h1{font-size:clamp(38px,6.2vw,68px);margin-bottom:20px}
+/* text-wrap:balance evens the line lengths so the last line never ends up
+   holding a single orphaned word. Browsers without it just wrap normally. */
+.hero h1{font-size:clamp(38px,6.2vw,68px);margin-bottom:20px;text-wrap:balance}
 .hero h1 .hl{color:var(--accent-hi)}
 .hero p.lead{
   max-width:660px;margin:0 auto 30px;color:var(--muted);
@@ -296,11 +404,12 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
 <!-- ── hero ─────────────────────────────────────────────────────────── -->
 <header class="hero" id="top">
   <div class="wrap hero-in">
-    <h1>One app for <span class="hl">every MetaTrader</span><br>terminal you run.</h1>
+    <h1>MT Manager — one app for <span class="hl">every MetaTrader terminal</span> you run.</h1>
     <p class="lead">
-      MT Manager finds every MT4 and MT5 installed on your PC, manages your EAs and
-      indicators, clears out junk files, duplicates terminals, and downloads EAs
-      straight from a link — all from a single window.
+      A free <strong>MetaTrader manager</strong> for Windows. It finds every
+      MetaTrader 4 and MetaTrader 5 terminal installed on your PC, manages your
+      Expert Advisors and indicators, clears out junk files, duplicates terminals,
+      and downloads EAs straight from a link — all from a single window.
     </p>
     <div class="cta">
       <a class="btn btn-primary" href="https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release">
@@ -319,7 +428,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <span class="chip">Zero telemetry</span>
     </div>
     <div class="shot rv">
-      <img src="Image/main-dark.png" alt="MT Manager main window showing detected terminals and their files" width="1782" height="1131">
+      <img src="Image/main-dark.png" alt="MT Manager main window showing detected MetaTrader terminals and their files" width="1782" height="1131" fetchpriority="high" decoding="async">
     </div>
   </div>
 </header>
@@ -366,7 +475,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
           <span class="tag">Log</span><span class="tag">History</span><span class="tag">Ticks</span><span class="tag">Cache</span>
         </div>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/main-dark.png" alt="Terminal list and the categorised file table"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/main-dark.png" alt="Terminal list and the categorised file table" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat flip rv">
@@ -375,7 +484,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>Install an EA or indicator into the selected terminal without ever needing to know which folder it belongs in. Need to remove some? Tick several files and delete them in one go.</p>
         <p><strong>Copy / Cut / Paste</strong> works across terminals too, which makes putting the same EA on several accounts quick.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-manage-ea.png" alt="Manage EA / Indicator menu open"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/menu-manage-ea.png" alt="Manage EA / Indicator menu open" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat rv">
@@ -384,7 +493,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>MetaTrader quietly piles up logs, price history, tick data and tester caches that can swallow tens of gigabytes. The <strong>Utility</strong> menu clears them by type, so you choose exactly what goes without touching your EAs or settings.</p>
         <p>MetaEditor opens straight from here as well.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-utility.png" alt="Utility menu with the clear options"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/menu-utility.png" alt="Utility menu with the clear options" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat flip rv">
@@ -393,7 +502,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>One menu covers the whole lifecycle: <strong>Install MetaTrader</strong>, <strong>Duplicate MetaTrader</strong> and <strong>Uninstall MetaTrader</strong>.</p>
         <p>No hunting for broker download pages, no digging through Programs and Features.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-add-remove-mt.png" alt="Add / Remove MT menu with install, duplicate and uninstall"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/menu-add-remove-mt.png" alt="Add / Remove MT menu with install, duplicate and uninstall" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat rv">
@@ -402,7 +511,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p><strong>Install MetaTrader</strong> gives you a searchable list you can filter by MT4 or MT5 — pick a broker and the rest happens on its own.</p>
         <p>Already have an installer file of your own? Point it at that instead.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/install-mt.png" alt="Install MetaTrader window with the broker list"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/install-mt.png" alt="Install MetaTrader window with the broker list" width="1002" height="771" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat flip rv">
@@ -411,7 +520,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p><strong>Duplicate MetaTrader</strong> creates a second terminal from the same broker, shows a copy progress bar, and launches it once it's done.</p>
         <p>Handy when you hold several accounts at one broker and want each to have its own terminal.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/duplicate-mt.png" alt="Duplicate MetaTrader window with copy progress"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/duplicate-mt.png" alt="Duplicate MetaTrader window with copy progress" width="702" height="592" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat rv">
@@ -419,7 +528,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <h3>Notifications that stay out of the way</h3>
         <p>Messages appear briefly above the downloader and fade on their own. No more dialog boxes to dismiss every time something finishes.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/toast.png" alt="A self-dismissing notification appearing above the downloader"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/toast.png" alt="A self-dismissing notification appearing above the downloader" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat flip rv">
@@ -428,7 +537,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>One click switches the theme and the whole app follows instantly — title bar included.</p>
         <p>Your choice is remembered, so it opens the way you left it.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/main-light.png" alt="MT Manager in its light theme"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/main-light.png" alt="MT Manager in its light theme" width="1782" height="1131" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="feat rv">
@@ -437,7 +546,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>MT Manager checks for updates, downloads, installs and restarts itself — you just press one button.</p>
         <p>Every release comes with notes you can read any time from <strong>What's New</strong>.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/whats-new.png" alt="The What's New window listing release notes"></figure>
+      <figure class="figure" style="margin:0"><img src="Image/whats-new.png" alt="The What's New window listing release notes" width="702" height="681" loading="lazy" decoding="async"></figure>
     </div>
 
     <!-- Two features with no window of their own to show — kept as compact
@@ -531,7 +640,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <p>If it saves you time, any support at all goes a long way toward keeping it developed.</p>
     </div>
     <figure class="rv" style="margin:0 auto 34px;max-width:460px;border-radius:8px;overflow:hidden;border:1px solid var(--divider);box-shadow:var(--shadow-sm)">
-      <img src="Image/donate.png" alt="The Donate window inside MT Manager listing the three support options">
+      <img src="Image/donate.png" alt="The Donate window inside MT Manager listing the three support options" width="687" height="528" loading="lazy" decoding="async">
     </figure>
     <div class="donate rv">
       <a class="dcard" href="https://trakteer.id/dhimas_bagus4/tip" target="_blank" rel="noopener">Trakteer
