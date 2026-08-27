@@ -43,7 +43,7 @@ MT5|HFM|https://download.mql5.com/cdn/web/12018/mt5/hfmarketsglobal5setup.exe
 MT5|IC Markets|https://download.mql5.com/cdn/web/18040/mt5/icmarketssc5setup.exe
 MT5|JustMarkets|https://download.mql5.com/cdn/web/just.global.markets/mt5/justmarkets5setup.exe
 MT5|Markets4you|https://download.terminal.free/cdn/web/eglobal.trade.and/mt5/eglobaltrade5setup.exe
-MT5|MT5 Umum|https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe
+MT5|MT5|https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe
 MT5|OctaFX|https://download.terminal.free/cdn/web/octa.markets.incorporated/mt5/octafx5setup.exe
 MT5|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt5/pepperstone5setup.exe
 MT5|ThinkMarkets|https://download.terminal.free/cdn/web/tf.global.markets/mt5/thinkmarkets5setup.exe
