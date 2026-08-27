@@ -23,6 +23,7 @@ MT4|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt4/
 MT4|Tickmill|https://download.mql5.com/cdn/web/17409/mt4/tickmill4setup.exe
 MT4|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt4/ultimamarkets4setup.exe
 MT4|Valetax|https://download.terminal.free/cdn/web/valetax.international.limited/mt4/valetaxintl4setup.exe
+MT4|Vantage|https://download.terminal.free/cdn/web/vantage.markets.pty/mt4/vantagemarkets4setup.exe
 MT4|VT Markets|https://download.terminal.free/cdn/web/vt.markets.pty/mt4/vtmarkets4setup.exe
 MT4|Weltrade|https://download.mql5.com/cdn/web/systemgates.limited/mt4/weltrade4setup.exe
 MT4|XM Global|https://download.mql5.com/cdn/web/xm.global.limited/mt4/xmglobal4setup.exe
@@ -50,6 +51,7 @@ MT5|Tickmill|https://download.mql5.com/cdn/web/19497/mt5/tickmill5setup.exe
 MT5|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt5/ultimamarkets5setup.exe
 MT5|Valetax Global|https://download.terminal.free/cdn/web/valetax.global.limited/mt5/valetaxglobal5setup.exe
 MT5|Valetax International|https://download.terminal.free/cdn/web/valetax.international.limited/mt5/valetaxintl5setup.exe
+MT5|Vantage|https://download.terminal.free/cdn/web/vantage.markets.pty/mt5/vantagemarkets5setup.exe
 MT5|VT Markets|https://download.terminal.free/cdn/web/vt.markets.pty/mt5/vtmarkets5setup.exe
 MT5|Weltrade|https://download.mql5.com/cdn/web/systemgates.limited/mt5/weltrade5setup.exe
 MT5|XM Global|https://download.mql5.com/cdn/web/xm.global.limited/mt5/xmglobal5setup.exe
