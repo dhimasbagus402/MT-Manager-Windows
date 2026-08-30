@@ -20,6 +20,7 @@ MT4|JustMarkets|https://download.mql5.com/cdn/web/just.global.markets/mt4/justma
 MT4|Markets4you|https://download.terminal.free/cdn/web/20142/mt4/eglobaltrade4setup.exe
 MT4|OctaFX|https://download.mql5.com/cdn/web/octa.markets.incorporated/mt4/octafx4setup.exe
 MT4|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt4/pepperstone4setup.exe
+MT4|PUPrime|https://download.mql5.com/cdn/web/pu.prime.ltd/mt4/puprime4setup.exe
 MT4|Tickmill|https://download.mql5.com/cdn/web/17409/mt4/tickmill4setup.exe
 MT4|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt4/ultimamarkets4setup.exe
 MT4|Valetax|https://download.terminal.free/cdn/web/valetax.international.limited/mt4/valetaxintl4setup.exe
@@ -43,9 +44,10 @@ MT5|HFM|https://download.mql5.com/cdn/web/12018/mt5/hfmarketsglobal5setup.exe
 MT5|IC Markets|https://download.mql5.com/cdn/web/18040/mt5/icmarketssc5setup.exe
 MT5|JustMarkets|https://download.mql5.com/cdn/web/just.global.markets/mt5/justmarkets5setup.exe
 MT5|Markets4you|https://download.terminal.free/cdn/web/eglobal.trade.and/mt5/eglobaltrade5setup.exe
-MT5|MT5|https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe
+MT5|MT5 Umum|https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe
 MT5|OctaFX|https://download.terminal.free/cdn/web/octa.markets.incorporated/mt5/octafx5setup.exe
 MT5|Pepperstone|https://download.mql5.com/cdn/web/pepperstone.group.limited/mt5/pepperstone5setup.exe
+MT5|PUPrime|https://download.mql5.com/cdn/web/pu.prime.ltd/mt5/puprime5setup.exe
 MT5|ThinkMarkets|https://download.terminal.free/cdn/web/tf.global.markets/mt5/thinkmarkets5setup.exe
 MT5|Tickmill|https://download.mql5.com/cdn/web/19497/mt5/tickmill5setup.exe
 MT5|Ultima|https://download.terminal.free/cdn/web/ultima.markets.ltd/mt5/ultimamarkets5setup.exe
