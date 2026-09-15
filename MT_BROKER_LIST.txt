@@ -10,6 +10,7 @@ MT4|Axi|https://download.mql5.com/cdn/web/axicorp.financial.services/mt4/axi4set
 MT4|Elev8|https://download.terminal.free/cdn/web/elev8.markets.ltd/mt4/elev84setup.exe
 MT4|Exness|https://download.metatrader.com/cdn/web/exness.technologies.ltd/mt4/exness4setup.exe
 MT4|FBS|https://download.mql5.com/cdn/web/fbs.markets.inc/mt4/fbs4setup.exe
+MT4|Firewoodfx|https://download.terminal.free/cdn/web/firewood.global.ltd/mt4/firewoodfx4setup.exe
 MT4|FTMO|https://download.terminal.free/cdn/web/ftmo.global.markets/mt4/ftmo4setup.exe
 MT4|FX Clearing|https://download.mql5.com/cdn/web/fxcl.markets.ltd/mt4/fxcl4setup.exe
 MT4|FXTM|https://download.mql5.com/cdn/web/16626/mt4/forextimefxtm4setup.exe
