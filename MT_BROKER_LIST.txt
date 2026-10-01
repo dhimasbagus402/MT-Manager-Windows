@@ -38,6 +38,7 @@ MT5|Deriv|https://download.mql5.com/cdn/web/deriv.com.limited/mt5/deriv5setup.ex
 MT5|Dupoin|https://download.mql5.com/cdn/web/23187/mt5/dupoinfuturesid5setup.exe
 MT5|Elev8|https://download.terminal.free/cdn/web/elev8.markets.ltd/mt5/elev85setup.exe
 MT5|Exness|https://download.metatrader.com/cdn/web/exness.technologies.ltd/mt5/exness5setup.exe
+MT5|Finex|https://download.terminal.free/cdn/web/22020/mt5/finexbisnissolusi5setup.exe
 MT5|FBS|https://download.mql5.com/cdn/web/fbs.markets.inc/mt5/fbs5setup.exe
 MT5|FTMO|https://download.terminal.free/cdn/web/ftmo.global.markets/mt5/ftmo5setup.exe
 MT5|FXTM|https://download.mql5.com/cdn/web/16628/mt5/forextimefxtm5setup.exe
