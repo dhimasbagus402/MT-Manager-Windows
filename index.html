@@ -15,7 +15,7 @@
      kalau salah, halaman ini bisa dianggap duplikat dari alamat lain.
      ─────────────────────────────────────────────────────────────────────── -->
 <title>MT Manager — Free MetaTrader Manager for MT4 &amp; MT5</title>
-<meta name="description" content="Free MetaTrader manager for Windows. MT Manager finds every MT4 and MT5 terminal on your PC to manage Expert Advisors, clear logs and duplicate terminals.">
+<meta name="description" content="Free MetaTrader manager for Windows. Find every MT4 and MT5 terminal on your PC, install Expert Advisors, clear logs and tick data, keep a VPS signed in.">
 <link rel="canonical" href="https://dhimasbagus402.github.io/MT-Manager-Windows/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="MT Manager">
@@ -40,19 +40,28 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://dhimasbagus402.github.io/MT-Manager-Windows/">
 <meta property="og:title" content="MT Manager — Free MetaTrader Manager for MT4 &amp; MT5">
-<meta property="og:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals — free for Windows.">
+<meta property="og:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals, set up VPS autologon — free for Windows.">
 <meta property="og:image" content="https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png">
-<meta property="og:image:width" content="1782">
-<meta property="og:image:height" content="1131">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1842">
+<meta property="og:image:height" content="1161">
 <meta property="og:image:alt" content="The MT Manager window listing detected MetaTrader terminals and their files">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MT Manager — Free MetaTrader Manager for MT4 &amp; MT5">
-<meta name="twitter:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals — free for Windows.">
+<meta name="twitter:description" content="Find every MetaTrader 4 and MetaTrader 5 terminal on your PC. Manage Expert Advisors and indicators, clear logs and cache, duplicate terminals, set up VPS autologon — free for Windows.">
 <meta name="twitter:image" content="https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png">
+<meta name="twitter:image:alt" content="The MT Manager window listing detected MetaTrader terminals and their files">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- The hero screenshot is this page's Largest Contentful Paint element, so it
+     is preloaded: the browser starts fetching it while it is still parsing the
+     head, instead of waiting until it reaches the <img> near the end of the
+     markup. type="image/webp" means a browser without WebP support skips the
+     preload rather than wasting a request. -->
+<link rel="preload" as="image" href="Image/main-dark.webp" type="image/webp" fetchpriority="high">
 
 <!-- Structured data: tells Google this page is a downloadable Windows app,
      which is what makes the price / rating / OS chips eligible in results. -->
@@ -69,10 +78,31 @@
   "applicationSubCategory": "Trading platform utility",
   "operatingSystem": "Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows 11",
   "softwareRequirements": ".NET Framework 4.8",
-  "downloadUrl": "https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release",
+  "downloadUrl": "https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-2.1.exe",
   "installUrl": "https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release",
   "softwareHelp": "https://github.com/dhimasbagus402/MT-Manager-Windows",
   "isAccessibleForFree": true,
+  "softwareVersion": "2.1",
+  "datePublished": "2026-08-10",
+  "dateModified": "2026-10-03",
+  "fileSize": "2.1MB",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Dhimas Bagus",
+    "url": "https://github.com/dhimasbagus402"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Dhimas Bagus",
+    "url": "https://github.com/dhimasbagus402"
+  },
+  "screenshot": [
+    "https://dhimasbagus402.github.io/MT-Manager-Windows/Image/main-dark.png",
+    "https://dhimasbagus402.github.io/MT-Manager-Windows/Image/search-filter.png",
+    "https://dhimasbagus402.github.io/MT-Manager-Windows/Image/autologon.png",
+    "https://dhimasbagus402.github.io/MT-Manager-Windows/Image/install-mt.png"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -82,11 +112,13 @@
   "featureList": [
     "Automatically detects installed MetaTrader 4 and MetaTrader 5 terminals",
     "Install and remove Expert Advisors and indicators",
+    "Search the file table by name and filter it by category",
     "Copy, cut and paste files between terminals",
     "Clear logs, price history, tick data and tester cache",
     "Install, duplicate and uninstall MetaTrader terminals",
     "Download Expert Advisors from a URL with automatic ZIP extraction",
     "Per-terminal autostart with Windows",
+    "Windows autologon setup for unattended machines and VPS",
     "Dark and light themes"
   ]
 }
@@ -126,6 +158,54 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, it is completely free to download and use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I install one Expert Advisor on several MetaTrader terminals at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Install the Expert Advisor into the first terminal, then select its file in the table and use Copy. Pick the next terminal in the sidebar and use Paste. MT Manager puts the file in the right folder for that terminal, so you never have to open a data folder yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my MetaTrader folder taking up so much disk space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MetaTrader keeps logs, downloaded price history, tick data and strategy tester caches, and none of them are cleared automatically. On a terminal that has been backtesting for a while these can reach tens of gigabytes. The Utility menu in MT Manager clears them by type, so your Expert Advisors, charts and settings stay where they are."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I keep MetaTrader running on a VPS after a reboot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two things are needed. Turn on autostart for the terminal so Windows launches it at sign-in, and turn on Windows autologon so the machine signs in by itself after a restart. Without autologon the VPS stops at the sign-in screen and the terminal never starts. MT Manager sets up both, and warns you when the saved Windows password no longer matches the account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does MT Manager store the autologon password?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is stored as an encrypted LSA secret, the same place the Sysinternals Autologon tool uses, rather than as a plain-text registry value that any program could read. MT Manager itself keeps no copy of the password. It only records when the account's password was last changed, which is how it can tell you that the stored one has gone stale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run two MetaTrader terminals from the same broker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Duplicate MetaTrader copies an existing terminal into a second installation with its own data folder, so each account gets its own terminal and its own charts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does MT Manager work with both MT4 and MT5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both platforms are detected in the same scan and listed side by side, each labelled with its type, and every action works the same on either."
       }
     }
   ]
@@ -269,6 +349,25 @@ section{padding:96px 0}
 .pain{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px}
 .pain li{display:flex;gap:13px;align-items:flex-start;color:var(--muted);font-size:15.5px}
 .pain svg{flex:none;margin-top:3px;color:var(--accent)}
+/* min-width:0 lets the text column shrink below its min-content width instead
+   of forcing the grid track — and the page — wider than a phone screen. */
+.pain li>span{min-width:0}
+
+/* Release notes list. Deliberately NOT .pain: that one makes every child of the
+   li a flex item, so a <strong> inside the sentence would be torn out into a
+   column of its own. Here the whole sentence lives in one <span>, which keeps
+   the icon and the text as the only two flex items. */
+.notes{list-style:none;padding:0;margin:0;display:grid;gap:15px;max-width:780px;margin-inline:auto}
+.notes li{display:flex;gap:13px;align-items:flex-start;color:var(--muted);font-size:15.5px;line-height:1.6}
+.notes li svg{flex:none;margin-top:4px;color:var(--accent)}
+.notes li strong{color:var(--text)}
+.notes .tag{
+  flex:none;margin-top:3px;font-size:10.5px;font-weight:800;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:999px;min-width:60px;text-align:center;
+}
+.notes .tag.new{background:var(--accent-dim);color:var(--accent-soft)}
+.notes .tag.imp{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.notes .tag.fix{background:color-mix(in srgb,var(--muted) 18%,transparent);color:var(--muted)}
 .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .stat{background:var(--bg);border:1px solid var(--divider);border-radius:var(--radius);padding:22px 20px}
 .stat b{display:block;font-size:30px;line-height:1;margin-bottom:7px}
@@ -396,7 +495,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <a href="#features">Features</a>
       <a href="#requirements">Requirements</a>
       <a href="#install">Install</a>
-      <a href="#support">Support</a>
+      <a href="#whatsnew">What's new</a>
       <a href="#faq">FAQ</a>
     </div>
     <button class="switch" id="themeBtn" type="button" role="switch" aria-label="Toggle light and dark theme">
@@ -418,7 +517,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       A free <strong>MetaTrader manager</strong> for Windows. It finds every
       MetaTrader 4 and MetaTrader 5 terminal installed on your PC, manages your
       Expert Advisors and indicators, clears out junk files, duplicates terminals,
-      and downloads EAs straight from a link — all from a single window.
+      and keeps an unattended VPS signed in — all from a single window.
     </p>
     <div class="cta">
       <a class="btn btn-primary" href="https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release">
@@ -435,9 +534,10 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <span class="chip">Windows 7 SP1 → 11</span>
       <span class="chip">No account needed</span>
       <span class="chip">Zero telemetry</span>
+      <span class="chip"><a href="#whatsnew" style="color:inherit">v2.1 — 3 Oct 2026</a></span>
     </div>
     <div class="shot rv">
-      <img src="Image/main-dark.png" alt="MT Manager main window showing detected MetaTrader terminals and their files" width="1782" height="1131" fetchpriority="high" decoding="async">
+      <picture><source srcset="Image/main-dark.webp" type="image/webp"><img src="Image/main-dark.png" alt="MT Manager main window showing detected MetaTrader terminals and their files" fetchpriority="high" decoding="async" width="1842" height="1161"></picture>
     </div>
   </div>
 </header>
@@ -450,9 +550,15 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <h2 style="font-size:clamp(26px,4vw,38px);margin-bottom:16px">Running several accounts shouldn't mean endless folder digging.</h2>
       <p style="color:var(--muted);margin:0">If you run more than one MetaTrader account, the small jobs become the tiring ones.</p>
       <ul class="pain">
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Installing one EA across five terminals means opening five data folders.</li>
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Wondering why the disk is full? Go dig through <code>Logs</code>, <code>Bases</code> and <code>Tester</code> yourself.</li>
-        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Need a second terminal from the same broker? Reinstall it from scratch.</li>
+        <!-- Each sentence is wrapped in a single <span>. The li is display:flex,
+             so without it every inline <code> would become a flex item of its
+             own: they would be laid out in source order as siblings of the text
+             (reading out of order), and because flex items do not wrap, their
+             combined min-content width would force this grid column wider than
+             a phone screen and push the whole page into horizontal scroll. -->
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> <span>Installing one EA across five terminals means opening five data folders.</span></li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> <span>Wondering why the disk is full? Go dig through <code>Logs</code>, <code>Bases</code> and <code>Tester</code> yourself.</span></li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> <span>Need a second terminal from the same broker? Reinstall it from scratch.</span></li>
       </ul>
       <p style="margin-top:22px">MT Manager brings all of it into one place. Your terminals are detected for you, their contents are laid out by category, and every action is a single click away.</p>
     </div>
@@ -484,7 +590,26 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
           <span class="tag">Log</span><span class="tag">History</span><span class="tag">Ticks</span><span class="tag">Cache</span>
         </div>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/main-dark.png" alt="Terminal list and the categorised file table" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/main-dark.webp" type="image/webp"><img src="Image/main-dark.png" alt="Terminal list and the categorised file table" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
+    </div>
+
+    <div class="feat flip rv">
+      <div class="txt">
+        <h3>Find a file in a list of thousands</h3>
+        <p>Terminals that have been running a while hold thousands of files. Type part of a name into the <strong>search box</strong> and the table narrows as you type; pick a <strong>category</strong> to see only Expert Advisors, only indicators, or only the logs.</p>
+        <p>The count at the bottom always tells you what you are looking at — <em>3 of 10 file(s)</em> — and anything hidden by a filter is left out of Copy, Cut and Delete, so you can never act on a row you cannot see.</p>
+      </div>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/search-filter.webp" type="image/webp"><img src="Image/search-filter.png" alt="The file table filtered to show only Expert Advisors, with the count reading 3 of 10 files" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
+    </div>
+
+    <div class="feat rv">
+      <div class="txt">
+        <h3>Keep a VPS signed in with autologon</h3>
+        <p>Setting a terminal to start on boot only gets you half way: Windows runs those entries <em>after</em> somebody signs in, so an unattended machine sits at the sign-in screen and nothing trades.</p>
+        <p><strong>Autologon</strong> closes that gap. Set it once and Windows signs itself in after every restart. The status bar shows whether it is on, and because MT Manager records how old the account's password was when you set it up, it can warn you that <strong>the saved password needs updating</strong> after you change your Windows password — before the next reboot catches you out.</p>
+        <p>The password is kept as an encrypted LSA secret, not as plain text in the registry.</p>
+      </div>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/autologon.webp" type="image/webp"><img src="Image/autologon.png" alt="The Windows Autologon setup window inside MT Manager" loading="lazy" decoding="async" width="762" height="769"></picture></figure>
     </div>
 
     <div class="feat flip rv">
@@ -493,7 +618,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>Install an EA or indicator into the selected terminal without ever needing to know which folder it belongs in. Need to remove some? Tick several files and delete them in one go.</p>
         <p><strong>Copy / Cut / Paste</strong> works across terminals too, which makes putting the same EA on several accounts quick.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-manage-ea.png" alt="Manage EA / Indicator menu open" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/menu-manage-ea.webp" type="image/webp"><img src="Image/menu-manage-ea.png" alt="Manage EA / Indicator menu open" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
     </div>
 
     <div class="feat rv">
@@ -502,7 +627,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>MetaTrader quietly piles up logs, price history, tick data and tester caches that can swallow tens of gigabytes. The <strong>Utility</strong> menu clears them by type, so you choose exactly what goes without touching your EAs or settings.</p>
         <p>MetaEditor opens straight from here as well.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-utility.png" alt="Utility menu with the clear options" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/menu-utility.webp" type="image/webp"><img src="Image/menu-utility.png" alt="Utility menu with the clear options" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
     </div>
 
     <div class="feat flip rv">
@@ -511,7 +636,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>One menu covers the whole lifecycle: <strong>Install MetaTrader</strong>, <strong>Duplicate MetaTrader</strong> and <strong>Uninstall MetaTrader</strong>.</p>
         <p>No hunting for broker download pages, no digging through Programs and Features.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/menu-add-remove-mt.png" alt="Add / Remove MT menu with install, duplicate and uninstall" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/menu-add-remove-mt.webp" type="image/webp"><img src="Image/menu-add-remove-mt.png" alt="Add / Remove MT menu with install, duplicate and uninstall" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
     </div>
 
     <div class="feat rv">
@@ -520,7 +645,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p><strong>Install MetaTrader</strong> gives you a searchable list you can filter by MT4 or MT5 — pick a broker and the rest happens on its own.</p>
         <p>Already have an installer file of your own? Point it at that instead.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/install-mt.png" alt="Install MetaTrader window with the broker list" width="1002" height="771" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/install-mt.webp" type="image/webp"><img src="Image/install-mt.png" alt="Install MetaTrader window with the broker list" loading="lazy" decoding="async" width="1002" height="771"></picture></figure>
     </div>
 
     <div class="feat flip rv">
@@ -529,7 +654,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p><strong>Duplicate MetaTrader</strong> creates a second terminal from the same broker, shows a copy progress bar, and launches it once it's done.</p>
         <p>Handy when you hold several accounts at one broker and want each to have its own terminal.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/duplicate-mt.png" alt="Duplicate MetaTrader window with copy progress" width="702" height="592" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/duplicate-mt.webp" type="image/webp"><img src="Image/duplicate-mt.png" alt="Duplicate MetaTrader window with copy progress" loading="lazy" decoding="async" width="702" height="592"></picture></figure>
     </div>
 
     <div class="feat rv">
@@ -537,7 +662,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <h3>Notifications that stay out of the way</h3>
         <p>Messages appear briefly above the downloader and fade on their own. No more dialog boxes to dismiss every time something finishes.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/toast.png" alt="A self-dismissing notification appearing above the downloader" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/toast.webp" type="image/webp"><img src="Image/toast.png" alt="A self-dismissing notification appearing above the downloader" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
     </div>
 
     <div class="feat flip rv">
@@ -546,7 +671,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>One click switches the theme and the whole app follows instantly — title bar included.</p>
         <p>Your choice is remembered, so it opens the way you left it.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/main-light.png" alt="MT Manager in its light theme" width="1782" height="1131" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/main-light.webp" type="image/webp"><img src="Image/main-light.png" alt="MT Manager in its light theme" loading="lazy" decoding="async" width="1842" height="1161"></picture></figure>
     </div>
 
     <div class="feat rv">
@@ -555,7 +680,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p>MT Manager checks for updates, downloads, installs and restarts itself — you just press one button.</p>
         <p>Every release comes with notes you can read any time from <strong>What's New</strong>.</p>
       </div>
-      <figure class="figure" style="margin:0"><img src="Image/whats-new.png" alt="The What's New window listing release notes" width="702" height="681" loading="lazy" decoding="async"></figure>
+      <figure class="figure" style="margin:0"><picture><source srcset="Image/whats-new.webp" type="image/webp"><img src="Image/whats-new.png" alt="The What's New window listing release notes" loading="lazy" decoding="async" width="702" height="681"></picture></figure>
     </div>
 
     <!-- Two features with no window of their own to show — kept as compact
@@ -569,7 +694,12 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <div class="extra">
         <div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.77.04"/></svg></div>
         <h3>Start automatically with your PC</h3>
-        <p>Every terminal gets its own <strong>autostart</strong> switch. Turn it on and that terminal launches whenever Windows boots — ideal for a VPS that has to stay online. Uninstall MT Manager and every entry it created is removed for you.</p>
+        <p>Every terminal gets its own <strong>autostart</strong> switch. Turn it on and that terminal launches whenever Windows boots — ideal for a VPS that has to stay online. Switch one on while autologon is off and MT Manager offers to set that up too, so the pair actually works. Uninstall MT Manager and every entry it created is removed for you.</p>
+      </div>
+      <div class="extra">
+        <div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 11h7l-1 9 9-11h-7z"/></svg></div>
+        <h3>Quick on big terminals</h3>
+        <p>Scanning a terminal holding thousands of history and tick files is about <strong>four times faster</strong> than it was, and the table fills about four times faster again. Installing, deleting, pasting and clearing all run in the background, so the window keeps responding instead of locking up until they finish.</p>
       </div>
     </div>
   </div>
@@ -640,6 +770,29 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
   </div>
 </section>
 
+<!-- ── what's new ───────────────────────────────────────────────────
+     Dated release notes on the page itself: they tell a visitor what
+     changed without a round trip to GitHub, and they give the page
+     something that genuinely updates on every release. -->
+<section id="whatsnew">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow">Release notes</div>
+      <h2>What's new in version 2.1</h2>
+      <p>Released 3 October 2026. Older releases are listed on the <a href="https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release">Releases</a> page, and inside the app under <strong>What's New</strong>.</p>
+    </div>
+    <ul class="notes rv">
+      <li><span class="tag new">New</span><span><strong>Windows autologon</strong> — sign in automatically after a restart, so terminals set to start on boot actually launch on an unattended machine.</span></li>
+      <li><span class="tag new">New</span><span>Autologon status in the status bar, including a warning when the <strong>saved Windows password is out of date</strong>.</span></li>
+      <li><span class="tag new">New</span><span>Turning on autostart for a terminal now offers to set autologon up when it is off.</span></li>
+      <li><span class="tag imp">Faster</span><span>Scanning a terminal for files is about <strong>four times faster</strong>, and the file table fills about four times faster.</span></li>
+      <li><span class="tag imp">Faster</span><span>Installing, deleting, pasting and clearing files no longer freeze the window while they run.</span></li>
+      <li><span class="tag fix">Fixed</span><span>Text typed into the file search box started in the middle of the box instead of at the left.</span></li>
+      <li><span class="tag fix">Fixed</span><span>Primary button labels are black in the light theme and white in the dark theme.</span></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ── support ──────────────────────────────────────────────────────── -->
 <section id="support" class="support">
   <div class="wrap">
@@ -649,7 +802,7 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
       <p>If it saves you time, any support at all goes a long way toward keeping it developed.</p>
     </div>
     <figure class="rv" style="margin:0 auto 34px;max-width:460px;border-radius:8px;overflow:hidden;border:1px solid var(--divider);box-shadow:var(--shadow-sm)">
-      <img src="Image/donate.png" alt="The Donate window inside MT Manager listing the three support options" width="687" height="528" loading="lazy" decoding="async">
+      <picture><source srcset="Image/donate.webp" type="image/webp"><img src="Image/donate.png" alt="The Donate window inside MT Manager listing the three support options" loading="lazy" decoding="async" width="687" height="528"></picture>
     </figure>
     <div class="donate rv">
       <a class="dcard" href="https://trakteer.id/dhimas_bagus4/tip" target="_blank" rel="noopener">Trakteer
@@ -672,10 +825,10 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
     <div class="faq rv">
       <details class="qa" open>
         <summary>Does MT Manager change my trading settings or accounts?</summary>
-        <p class="a">No. It only manages files and folders that belong to your terminals — installing, copying and deleting EAs and indicators, and clearing logs and caches. Your accounts, charts and trading settings are never touched.</p>
+        <p class="a">No. It only manages files and folders that belong to your MetaTrader terminals — installing, copying and deleting Expert Advisors and indicators, and clearing logs and caches. Your accounts, charts and trading settings are never touched.</p>
       </details>
       <details class="qa">
-        <summary>Why doesn't my terminal show up when I scan?</summary>
+        <summary>Why doesn't my MetaTrader terminal show up when I scan?</summary>
         <p class="a">MT Manager reads terminals that were installed normally. MetaTrader running in <strong>portable</strong> mode keeps its data inside its own program folder, so it isn't detected.</p>
       </details>
       <details class="qa">
@@ -683,8 +836,32 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
         <p class="a">No. Only MT Manager's own things are removed — its settings and any autostart entries it created. Your MetaTrader data folders are left untouched.</p>
       </details>
       <details class="qa">
-        <summary>Is this paid software?</summary>
-        <p class="a">No, it's completely free.</p>
+        <summary>Is MT Manager paid software?</summary>
+        <p class="a">No, it is completely free to download and use.</p>
+      </details>
+      <details class="qa">
+        <summary>How do I install one Expert Advisor on several MetaTrader terminals at once?</summary>
+        <p class="a">Install the Expert Advisor into the first terminal, then select its file in the table and use <strong>Copy</strong>. Pick the next terminal in the sidebar and use <strong>Paste</strong>. MT Manager puts the file in the right folder for that terminal, so you never have to open a data folder yourself.</p>
+      </details>
+      <details class="qa">
+        <summary>Why is my MetaTrader folder taking up so much disk space?</summary>
+        <p class="a">MetaTrader keeps logs, downloaded price history, tick data and strategy tester caches, and none of them are cleared automatically. On a terminal that has been backtesting for a while these can reach tens of gigabytes. The <strong>Utility</strong> menu clears them by type, so your Expert Advisors, charts and settings stay where they are.</p>
+      </details>
+      <details class="qa">
+        <summary>How do I keep MetaTrader running on a VPS after a reboot?</summary>
+        <p class="a">Two things are needed. Turn on <strong>autostart</strong> for the terminal so Windows launches it at sign-in, and turn on <strong>Windows autologon</strong> so the machine signs in by itself after a restart. Without autologon the VPS stops at the sign-in screen and the terminal never starts. MT Manager sets up both, and warns you when the saved Windows password no longer matches the account.</p>
+      </details>
+      <details class="qa">
+        <summary>Where does MT Manager store the autologon password?</summary>
+        <p class="a">It is stored as an encrypted LSA secret, the same place the Sysinternals Autologon tool uses, rather than as a plain-text registry value that any program could read. MT Manager itself keeps no copy of the password. It only records <em>when</em> the account's password was last changed, which is how it can tell you that the stored one has gone stale.</p>
+      </details>
+      <details class="qa">
+        <summary>Can I run two MetaTrader terminals from the same broker?</summary>
+        <p class="a">Yes. <strong>Duplicate MetaTrader</strong> copies an existing terminal into a second installation with its own data folder, so each account gets its own terminal and its own charts.</p>
+      </details>
+      <details class="qa">
+        <summary>Does MT Manager work with both MT4 and MT5?</summary>
+        <p class="a">Yes. Both platforms are detected in the same scan and listed side by side, each labelled with its type, and every action works the same on either.</p>
       </details>
     </div>
   </div>
@@ -693,12 +870,12 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
 <!-- ── footer ───────────────────────────────────────────────────────── -->
 <footer>
   <div class="wrap foot">
-    <div>MT Manager — free for Windows.</div>
+    <div>MT Manager — free for Windows. Latest release v2.1.</div>
     <div style="display:flex;gap:22px;flex-wrap:wrap">
       <a href="https://github.com/dhimasbagus402/MT-Manager-Windows">GitHub</a>
       <a href="https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release">Releases</a>
-      <a href="PRIVACY.md">Privacy</a>
-      <a href="docs/DEVELOPMENT.md">Developer notes</a>
+      <a href="https://github.com/dhimasbagus402/MT-Manager-Windows/blob/main/PRIVACY.md">Privacy</a>
+      <a href="#faq">FAQ</a>
     </div>
   </div>
 </footer>
@@ -743,8 +920,10 @@ footer{padding:52px 0;border-top:1px solid var(--divider)}
   /* Click a screenshot to see it full size. */
   var lb = document.getElementById('lightbox');
   var lbImg = lb.querySelector('img');
+  /* The img now sits inside a <picture>, so bind the click to the <figure>
+     rather than to whatever element happens to be the img's parent. */
   document.querySelectorAll('.feat .figure img').forEach(function (img) {
-    img.parentElement.addEventListener('click', function () {
+    (img.closest('.figure') || img.parentElement).addEventListener('click', function () {
       lbImg.src = img.currentSrc || img.src;
       lbImg.alt = img.alt;
       lb.classList.add('on');

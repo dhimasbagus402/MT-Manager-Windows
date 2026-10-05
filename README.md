@@ -1,16 +1,17 @@
-[README.md](https://github.com/user-attachments/files/30888070/README.md)
 <div align="center">
 
-# MT Manager
+# MT Manager — free MetaTrader manager for Windows
 
-**One app to manage every MetaTrader terminal you run.**
+**One app to manage every MetaTrader 4 and MetaTrader 5 terminal you run.**
 
-Automatically finds every MT4 and MT5 installed on your PC, manages your EAs and
-indicators, clears out junk files, duplicates terminals, and downloads EAs
-straight from a link — all from a single window.
+Automatically finds every MT4 and MT5 installed on your PC, manages your Expert
+Advisors and indicators, clears out junk files, duplicates terminals, and keeps
+an unattended VPS signed in — all from a single window.
+
+**[📖 Website &amp; full feature tour →](https://dhimasbagus402.github.io/MT-Manager-Windows/)**
 
 [![Windows](https://img.shields.io/badge/Windows-7%20SP1%20%7C%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white)](#-system-requirements)
-[![Version](https://img.shields.io/badge/version-1-EC3013?style=flat-square)](#)
+[![Version](https://img.shields.io/badge/version-2.1-EC3013?style=flat-square)](#-whats-new-in-21)
 [![Free](https://img.shields.io/badge/price-free-5ecf3e?style=flat-square)](#)
 
 <img src="Image/main-dark.png" alt="MT Manager main window" width="900">
@@ -45,6 +46,34 @@ Its contents appear as one clean list with a colour-coded label per category —
 and **Cache** — along with each file's size and last-modified date.
 
 <img src="Image/main-dark.png" alt="Terminal list and file table" width="820">
+
+### Find a file in a list of thousands
+
+Type part of a name into the **search box** and the table narrows as you type;
+pick a **category** to see only Expert Advisors, only indicators, or only the
+logs. The count at the bottom tells you what you're looking at — *3 of 10
+file(s)* — and anything hidden by a filter is left out of Copy, Cut and Delete,
+so you can never act on a row you can't see.
+
+<img src="Image/search-filter.png" alt="File table filtered to Expert Advisors" width="820">
+
+### Keep a VPS signed in with autologon
+
+Setting a terminal to start on boot only gets you half way: Windows runs those
+entries *after* somebody signs in, so an unattended machine sits at the sign-in
+screen and nothing trades.
+
+**Autologon** closes that gap — set it once and Windows signs itself in after
+every restart. The status bar shows whether it's on, and because MT Manager
+records how old the account's password was when you set it up, it warns you that
+**the saved password needs updating** after you change your Windows password,
+before the next reboot catches you out.
+
+The password is stored as an encrypted LSA secret (the same mechanism
+Sysinternals Autologon uses), never as plain text in the registry. See the
+[privacy policy](PRIVACY.md#windows-autologon) for exactly what is and isn't kept.
+
+<img src="Image/autologon.png" alt="Windows Autologon setup window" width="620">
 
 ### Manage EAs and indicators
 
@@ -90,9 +119,10 @@ Explorer.
 ### Start automatically with your PC
 
 Every terminal gets its own **autostart** switch. Turn it on and that terminal
-launches whenever Windows boots — ideal for a VPS that has to stay online. If
-you ever uninstall MT Manager, every autostart entry it created is removed for
-you.
+launches whenever Windows boots — ideal for a VPS that has to stay online.
+Switch one on while autologon is off and MT Manager offers to set that up too,
+so the pair actually works. If you ever uninstall MT Manager, every autostart
+entry it created is removed for you.
 
 ### Dark and light themes
 
@@ -134,11 +164,32 @@ just press one button. Every release comes with notes you can read any time from
 
 ## 📥 Installation
 
-1. Download `MTManager-Setup-1.exe` from the [Releases](https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release) page.
-2. Run the installer and follow it through.
+1. Download [`MTManager-Setup-2.1.exe`](https://github.com/dhimasbagus402/MT-Manager-Windows/raw/refs/heads/main/Release/MTManager-Setup-2.1.exe) from the [Releases](https://github.com/dhimasbagus402/MT-Manager-Windows/tree/main/Release) folder.
+2. Run the installer and follow it through. No administrator rights needed.
 3. Open MT Manager, press **Scan MetaTrader**, and your terminals appear.
 
-There's nothing to configure afterwards.
+There's nothing to configure afterwards. After that, MT Manager updates itself.
+
+---
+
+## 🆕 What's new in 2.1
+
+*Released 3 October 2026.*
+
+- **Windows autologon** — sign in automatically after a restart, so terminals set
+  to start on boot actually launch on an unattended machine.
+- Autologon status in the status bar, including a warning when the **saved
+  Windows password is out of date**.
+- Turning on autostart for a terminal now offers to set autologon up when it's off.
+- Scanning a terminal for files is about **four times faster**, and the file table
+  fills about four times faster.
+- Installing, deleting, pasting and clearing files no longer freeze the window
+  while they run.
+- *Fixed:* text typed into the file search box started in the middle of the box
+  instead of at the left.
+- *Fixed:* primary button labels are black in the light theme and white in the dark.
+
+Earlier releases are listed in the app under **What's New**.
 
 ---
 
@@ -175,7 +226,26 @@ detected.
 No. Only MT Manager's own things are removed — its settings and any autostart
 entries it created. Your MetaTrader data folders are left untouched.
 
+**How do I keep MetaTrader running on a VPS after a reboot?**
+Two things are needed: turn on **autostart** for the terminal so Windows launches
+it at sign-in, and turn on **Windows autologon** so the machine signs in by
+itself after a restart. Without autologon the VPS stops at the sign-in screen and
+the terminal never starts. MT Manager sets up both.
+
+**Where does MT Manager store the autologon password?**
+As an encrypted LSA secret — the same place Sysinternals Autologon uses — never
+as a plain-text registry value. MT Manager keeps no copy of it; it only records
+*when* the account's password was last changed, which is how it can tell you the
+stored one has gone stale. Details in the [privacy policy](PRIVACY.md#windows-autologon).
+
 **Is this paid software?**
 No, it's completely free.
+
+---
+
+## 🔒 Privacy
+
+No accounts, no analytics, no telemetry, nothing sent anywhere. See
+[PRIVACY.md](PRIVACY.md).
 
 ---

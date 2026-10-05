@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dhimasbagus402.github.io/MT-Manager-Windows/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,9 +17,29 @@
       <image:caption>MT Manager in its light theme</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/search-filter.png</image:loc>
+      <image:title>Search and filter the MetaTrader file list</image:title>
+      <image:caption>The file table filtered to Expert Advisors only, searchable by name</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/autologon.png</image:loc>
+      <image:title>Windows autologon setup</image:title>
+      <image:caption>Setting up Windows autologon so a MetaTrader VPS signs in by itself after a restart</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/menu-utility.png</image:loc>
+      <image:title>Clear MetaTrader logs, history, ticks and cache</image:title>
+      <image:caption>The Utility menu clearing logs, price history, tick data and tester cache</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/install-mt.png</image:loc>
       <image:title>Install MetaTrader</image:title>
       <image:caption>The searchable broker list for installing a new MetaTrader terminal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dhimasbagus402.github.io/MT-Manager-Windows/Image/duplicate-mt.png</image:loc>
+      <image:title>Duplicate a MetaTrader terminal</image:title>
+      <image:caption>Duplicating a MetaTrader terminal so a second account gets its own installation</image:caption>
     </image:image>
   </url>
 </urlset>
