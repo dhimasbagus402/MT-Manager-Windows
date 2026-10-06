@@ -1,0 +1,8 @@
+# MT Manager — nothing here is private, crawl all of it.
+User-agent: *
+Allow: /
+
+# Crawlers only read robots.txt from the ROOT of the host they are on, which is
+# why this file lives in the repo root rather than in the parent site: this repo
+# is served at the root of mtm.dhimasbagus.my.id.
+Sitemap: https://mtm.dhimasbagus.my.id/sitemap.xml
