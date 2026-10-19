@@ -33,7 +33,7 @@ MT4|XM Global|https://download.mql5.com/cdn/web/xm.global.limited/mt4/xmglobal4s
 
 # ── MT5 ──
 MT5|Axi|https://download.mql5.com/cdn/web/axicorp.financial.services/mt5/axi5setup.exe
-MT5|CXM Direct|https://download.mql5.com/cdn/web/22250/mt5/cxmdirect5setup.exe
+MT5|CXM Direct|https://cxmassets.com/platform/windows/cxmdirect5setup.exe
 MT5|Deriv|https://download.mql5.com/cdn/web/deriv.com.limited/mt5/deriv5setup.exe
 MT5|Dupoin|https://download.mql5.com/cdn/web/23187/mt5/dupoinfuturesid5setup.exe
 MT5|Elev8|https://download.terminal.free/cdn/web/elev8.markets.ltd/mt5/elev85setup.exe
